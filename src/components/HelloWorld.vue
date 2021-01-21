@@ -10,13 +10,17 @@ export default {
   props: {
     msg: String
   },
+  setup(props): void {
+    console.log(props)
+  },
   data() {
     return {
       count: 0
     }
   },
-  created (): void {
-      console.log(this)
-  }
+  created(): void {
+    console.log(this)
+  },
+  methods: {}
 }
 </script>
