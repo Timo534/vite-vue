@@ -1,5 +1,13 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import router from './router'
 import './index.css'
+import 'vant/lib/index.css'
+import App from './App.vue'
+import { Tabbar, TabbarItem } from 'vant'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.use(Tabbar)
+app.use(TabbarItem)
+
+app.use(router).mount('#app')

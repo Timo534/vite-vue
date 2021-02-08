@@ -5,22 +5,16 @@
 </template>
 
 <script lang="ts">
-export default {
+import { defineComponent } from 'vue'
+export default defineComponent({
   name: 'HelloWorld',
   props: {
     msg: String
-  },
-  setup(props): void {
-    console.log(props)
   },
   data() {
     return {
       count: 0
     }
-  },
-  created(): void {
-    console.log(this)
-  },
-  methods: {}
-}
+  }
+})
 </script>
